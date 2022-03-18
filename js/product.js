@@ -1,26 +1,6 @@
 var data = 
 [
-    {"id": "SD01", "name": "Dye Hair 01", "price": 100, "pic": "sd01.jpg", "description":"content.", "cat":"hairdye"},
-    {"id": "SD02", "name": "Dye Hair 02", "price": 100, "pic": "sd02.jpg", "description":"content.", "cat":"hairdye"},
-    {"id": "SD03", "name": "Dye Hair 03", "price": 100, "pic": "sd03.jpg", "description":"content.", "cat":"hairdye"},
-    {"id": "SD04", "name": "Dye Hair 04", "price": 100, "pic": "sd04.jpg", "description":"content.", "cat":"hairdye"},
-    {"id": "SD05", "name": "Dye Hair 05", "price": 100, "pic": "sd05.jpg", "description":"content.", "cat":"hairdye"},
-    {"id": "SD06", "name": "Dye Hair 06", "price": 100, "pic": "sd06.jpg", "description":"content.", "cat":"hairdye"},
-
-    {"id": "SS01", "name": "Skin Care 01", "price": 100, "pic": "ss01.jpg", "description":"content.", "cat":"skincare"},
-    {"id": "SS02", "name": "Skin Care 02", "price": 100, "pic": "ss02.jpg", "description":"content.", "cat":"skincare"},
-    {"id": "SS03", "name": "Skin Care 03", "price": 100, "pic": "ss03.jpg", "description":"content.", "cat":"skincare"},
-    {"id": "SS04", "name": "Skin Care 04", "price": 100, "pic": "ss04.jpg", "description":"content.", "cat":"skincare"},
-    {"id": "SS05", "name": "Skin Care 05", "price": 100, "pic": "ss05.jpg", "description":"content.", "cat":"skincare"},
-    {"id": "SS06", "name": "Skin Care 06", "price": 100, "pic": "ss06.jpg", "description":"content.", "cat":"skincare"},
-
-    {"id": "SN01", "name": "Nails Art 01", "price": 100, "pic": "sn01.jpg", "description":"content.", "cat":"nailsart"},
-    {"id": "SN02", "name": "Nails Art 02", "price": 100, "pic": "sn02.jpg", "description":"content.", "cat":"nailsart"},
-    {"id": "SN03", "name": "Nails Art 03", "price": 100, "pic": "sn03.jpg", "description":"content.", "cat":"nailsart"},
-    {"id": "SN04", "name": "Nails Art 04", "price": 100, "pic": "sn04.jpg", "description":"content.", "cat":"nailsart"},
-    {"id": "SN05", "name": "Nails Art 05", "price": 100, "pic": "sn05.jpg", "description":"content.", "cat":"nailsart"},
-    {"id": "SN06", "name": "Nails Art 06", "price": 100, "pic": "sn06.jpg", "description":"content.", "cat":"nailsart"},
-    
+     
     {"id": "PM01", "name": "Make-up Kit 01", "price": 100, "pic": "pm01.jpg", "description":"content.", "cat":"makeupkit"},
     {"id": "PM02", "name": "Make-up Kit 02", "price": 100, "pic": "pm02.jpg", "description":"content.", "cat":"makeupkit"},
     {"id": "PM03", "name": "Make-up Kit 03", "price": 100, "pic": "pm03.jpg", "description":"content.", "cat":"makeupkit"},
@@ -82,8 +62,8 @@ $("#formSearch").submit(function(e){
 })
 
 //lap trinh su kien click chon loai san pham
-$(".ck-flower").click(function(){
-    var category = $(".ck-flower:checked").map(function(){return $(this).val()}).toArray().toString();
+$(".ck-product").click(function(){
+    var category = $(".ck-product:checked").map(function(){return $(this).val()}).toArray().toString();
     var subdata = (category.length==0)?data : data.filter(item =>category.search(item.cat) >=0);
     displayImages(subdata);
 })
