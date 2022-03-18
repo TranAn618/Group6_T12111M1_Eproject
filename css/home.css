@@ -10,3 +10,14 @@ footer{
     font-size: small;
     font-weight: bold;
 }
+.cart-icon{
+    position: relative;
+    font-size: 30px;
+}
+
+.cart-badge{
+    position: absolute;
+    font-size: 10px;
+    left: 20px;
+    top: -5px;
+}

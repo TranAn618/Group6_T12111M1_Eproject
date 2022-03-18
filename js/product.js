@@ -73,11 +73,11 @@ function showProduct(pid){
     let products = data.filter(item => item.id == pid);
     let product = products[0];
 
-    let x = `<div class="col-sm-6"><img src="../image/${product.pic}" alt="${product.name}" width="500px"></div>
+    let x = `<div class="col-sm-6"><img src="../image/${product.pic}" alt="${product.name}" width="400px"></div>
             <div class="col-sm-6">
                 <h1>Name: ${product.name}</h1>
-                <h1>Price: ${product.price}</h1>
-                <h2>Description: ${product.description}</h2>
+                <h2>Price: ${product.price}</h2>
+                <h3>Description: ${product.description}</h3>
                 <button class="btn btn-primary">Add to cart</button>
             </div>`;
     $("#productDetail").html(x);

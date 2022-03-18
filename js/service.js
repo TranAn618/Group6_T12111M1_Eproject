@@ -1,6 +1,7 @@
 var data = 
 [
-    {"id": "SD01", "name": "Dye Hair 01", "price": 100, "pic": "sd02.jpg", "description":"content.", "cat":"hairdye"},
+    {"id": "SD01", "name": "Dye Hair 01", "price": 100, "pic": "sd01.jpg", "description":"content.", "cat":"hairdye"},
+    {"id": "SD02", "name": "Dye Hair 02", "price": 100, "pic": "sd02.jpg", "description":"content.", "cat":"hairdye"},
     {"id": "SD03", "name": "Dye Hair 03", "price": 100, "pic": "sd03.jpg", "description":"content.", "cat":"hairdye"},
     {"id": "SD04", "name": "Dye Hair 04", "price": 100, "pic": "sd04.jpg", "description":"content.", "cat":"hairdye"},
     {"id": "SD05", "name": "Dye Hair 05", "price": 100, "pic": "sd05.jpg", "description":"content.", "cat":"hairdye"},
@@ -33,8 +34,9 @@ function displayImages(items){
         s += `<div class="col-sm-4">
                 <div class="card">
                     <div class="card-header">${v.name}</div>
-                    <div class="card-body"><a href="product_${v.id}.html"><img src="../image/${v.pic}" alt="${v.name}"></a></div> 
-                    <div class="card-footer">Price: ${v.price} <br></div>
+                    <div class="card-body"><a href="service_${v.id}.html"><img src="../image/${v.pic}" alt="${v.name}"></a></div> 
+                    <div class="card-footer">Price: ${v.price} <br>
+                    </div>
                 </div>
             </div>`;
     });
@@ -45,6 +47,7 @@ function displayImages(items){
 //lap trinh su kien search
 $("#formSearch").submit(function(e){
     e.preventDefault();
+
     var value = $("#search").val();
     var re = new RegExp(value, "ig");
     var subdata = data.filter(item => item.name.search(re) >= 0);
@@ -52,10 +55,9 @@ $("#formSearch").submit(function(e){
 })
 
 
-
 //lap trinh su kien click chon loai san pham
-$(".ck-service").click(function(){
-    var category = $(".ck-service:checked").map(function(){return $(this).val()}).toArray().toString();
+$(".ck-product").click(function(){
+    var category = $(".ck-product:checked").map(function(){return $(this).val()}).toArray().toString();
     var subdata = (category.length==0)?data : data.filter(item =>category.search(item.cat) >=0);
     displayImages(subdata);
 })
@@ -65,11 +67,12 @@ function showProduct(pid){
     let products = data.filter(item => item.id == pid);
     let product = products[0];
 
-    let x = `<div class="col-sm-6"><img src="../image/${product.pic}" alt="${product.name}" width="500px"></div>
+    let x = `<div class="col-sm-6"><img src="../image/${product.pic}" alt="${product.name}" width="400px"></div>
             <div class="col-sm-6">
                 <h1>Name: ${product.name}</h1>
-                <h1>Price: ${product.price}</h1>
-                <h2>Description: ${product.description}</h2>
+                <h2>Price: ${product.price}</h2>
+                <h3>Description: ${product.description}</h3>
+                
             </div>`;
     $("#productDetail").html(x);
 }
