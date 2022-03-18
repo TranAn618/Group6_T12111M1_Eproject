@@ -16,7 +16,7 @@ var data =
 
     {"id": "SN01", "name": "Nails Art 01", "price": 100, "pic": "sn01.jpg", "description":"Waiting for content!", "cat":"nailsart"},
     {"id": "SN02", "name": "Nails Art 02", "price": 100, "pic": "sn02.jpg", "description":"“It is the lot of ‘man’ to strive no matter how content he is.”–Spock", "cat":"nailsart"},
-    {"id": "SN03", "name": "Nails Art 03", "price": 100, "pic": "sn03.jpg", "description":"“It is the lot of ‘man’ to strive no matter how content he is.” – Spock", "cat":"nailsart"},
+    {"id": "SN03", "name": "Nails Art 03", "price": 100, "pic": "sn03.jpg", "description":"Waiting for content!", "cat":"nailsart"},
     {"id": "SN04", "name": "Nails Art 04", "price": 100, "pic": "sn04.jpg", "description":"“Computers make excellent and efficient servants, but I have no wish to serve under them.” – Spock", "cat":"nailsart"},
     {"id": "SN05", "name": "Nails Art 05", "price": 100, "pic": "sn05.jpg", "description":"Waiting for content!", "cat":"nailsart"},
     {"id": "SN06", "name": "Nails Art 06", "price": 100, "pic": "sn06.jpg", "description":"“Without freedom of choice there is no creativity.” – Captain James T. Kirk", "cat":"nailsart"},
