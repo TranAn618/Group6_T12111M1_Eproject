@@ -41,7 +41,7 @@ function displayImages(items){
         s += `<div class="col-sm-4">
                 <div class="card">
                     <div class="card-header">${v.name}</div>
-                    <div class="card-body"><a href="product_${v.id}.html"><img src="../image/${v.pic}" alt="${v.name}"></a></div> 
+                    <div class="card-body"><a href="product_${v.id}.html"><img src="../image/${v.pic}" alt="${v.name}" width="200px" height="300px"></a></div> 
                     <div class="card-footer">Price: ${v.price} <br>
                         <button>Add to cart </button></div>
                 </div>
@@ -73,7 +73,7 @@ function showProduct(pid){
     let products = data.filter(item => item.id == pid);
     let product = products[0];
 
-    let x = `<div class="col-sm-6"><img src="../image/${product.pic}" alt="${product.name}" width="400px"></div>
+    let x = `<div class="col-sm-6"><img src="../image/${product.pic}" alt="${product.name}" width="400px" ></div>
             <div class="col-sm-6">
                 <h1>Name: ${product.name}</h1>
                 <h2>Price: ${product.price}</h2>
