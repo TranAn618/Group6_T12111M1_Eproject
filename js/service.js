@@ -34,7 +34,7 @@ function displayImages(items){
         s += `<div class="col-sm-4">
                 <div class="card">
                     <div class="card-header">${v.name}</div>
-                    <div class="card-body"><a href="service_${v.id}.html"><img src="../image/${v.pic}" alt="${v.name}"></a></div> 
+                    <div class="card-body"><a href="service_${v.id}.html"><img src="../image/${v.pic}" alt="${v.name}" width="200px" height="300px"></a></div> 
                     <div class="card-footer">Price: ${v.price} <br>
                     </div>
                 </div>

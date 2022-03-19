@@ -74,20 +74,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Date of Birth</td>
-                            <td>
-                                <input type="date" name="" id="birth">
-                            </td>
-                        </tr>
-                        <tr>
                             <td>Email</td>
                             <td>
                                 <input type="text" name="" required pattern="^\w+@\w+\.\w+$" id="email">
                             </td>
                         </tr>
-                        
                         <tr>
-                            <td colspan="2">>How did you know about this website</td>
+                            <td colspan="2">How did you know about this website?</td>
                         </tr>
                         <tr>
                             <td colspan="2">
@@ -123,15 +116,12 @@
                 </form>
             </div>
             <hr>
-            <h2>our Location: </h2>
+            <h2>Our Location: </h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.317770449306!2d106.66512631112188!3d10.786955993794422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1644630902656!5m2!1sen!2s" 
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <!--end main content-->
             <script>
                 function showInfo(){
-                    var dateofbirth = document.getElementById('birth').value;
-                    var birth = new Date(dateofbirth);
-                    var today = new Date();
                     var finame = document.getElementById('finame').value;
                     var laname = document.getElementById('laname').value;
                     var arr = document.getElementsByClassName('employed');
