@@ -7,17 +7,54 @@ header{
     color: white;
 }
 footer{
-    font-size: small;
-    font-weight: bold;
+    margin-top: 100px;
 }
 .cart-icon{
     position: relative;
     font-size: 30px;
 }
-
-.cart-badge{
-    position: absolute;
+.icon-policy{
+    padding-right: 20px;
+}
+.footer-logo-item{
+    color: black !important;
+    display: inline-block;
+    
+}
+.footer-nav-item{
+    padding-bottom: 30px;
+}
+.footer-nav-item:nth-child(1){
+    padding-top: 60px;
+}
+.footer-contact-container{
+    margin-top: 100px;
+}
+.footer-contact-text{
+    display: inline-block;
     font-size: 10px;
-    left: 20px;
-    top: -5px;
+    color: black;
+}
+.adjust-policy{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.policy-item{
+    display: flex;
+    padding-bottom: 20px;
+    margin-left: 100px;
+    
+}
+.policy-item:nth-child(1){
+    padding-top: 20px;
+}
+.policy-text{
+    width: 55%;
+}
+.policy-container{
+
+    padding:80px 0;
+ }
+ .icon-policy{
+    padding-right: 20px;
 }
