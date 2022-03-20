@@ -20,24 +20,33 @@
     <div class="row">
         <div class="col-sm-4 ">
             <!--navigation-->
-            <nav class="navbar navbar-expand-sm">
+            <nav id="sidebar" class="navbar navbar-expand-sm">
                 <div class="container-fluid">
                 <div class="collapse navbar-collapse"  id="mynavbar">
-                    <ul class="navbar-nav me-auto">
+                    <ul class="list-unstyled CTAs mb-0 pt-2">
+                        <li class="nav-item">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="text" placeholder="Search">
+                                <button class="btn btn-primary" type="button">Search</button>
+                            </form>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Service.html">Service</a>
                         </li>
+                        <div id="checkService">
+                            <h3>Choose Serice:</h3>
+                            <input type="checkbox" class="ck-service" value="hairdye">Dye Hair<br> 
+                            <input type="checkbox" class="ck-service" value="skincare">Skin Care<br>
+                            <input type="checkbox" class="ck-service" value="nailsart">Nails Art<br>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link" href="product.html">Product</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contactus.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -45,12 +54,7 @@
                 </div>
             </nav>
             <!--end navigation-->
-            <div id="checkService">
-                <h3>Choose Serice:</h3>
-                <input type="checkbox" class="ck-service" value="hairdye">Dye Hair<br> 
-                <input type="checkbox" class="ck-service" value="skincare">Skin Care<br>
-                <input type="checkbox" class="ck-service" value="nailsart">Nails Art<br>
-            </div>
+            
         </div>
 
         <div class="col-sm-8">

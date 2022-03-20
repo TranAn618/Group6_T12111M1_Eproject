@@ -22,10 +22,16 @@
     <div class="row">
         <div class="col-sm-4 ">
             <!--navigation-->
-            <nav class="navbar navbar-expand-sm">
+            <nav id="sidebar" class="navbar navbar-expand-sm">
                 <div class="container-fluid">
                 <div class="collapse navbar-collapse"  id="mynavbar">
-                    <ul class="navbar-nav me-auto">
+                    <ul class="list-unstyled CTAs mb-0 pt-2">
+                        <li class="nav-item">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="text" placeholder="Search">
+                                <button class="btn btn-primary" type="button">Search</button>
+                            </form>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
@@ -38,9 +44,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contactus.html">Contact Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">About Us</a>
-                        </li>
+                        
                     </ul>
                 </div>
                 </div>
@@ -48,12 +52,7 @@
             <!--end navigation-->
         </div>
         <div class="col-sm-8">
-            <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Search">
-                <button class="btn btn-primary" type="button">Search</button>
-                <i class="fa fa-shopping-cart cart-icon"> 
-                    <span class="badge bg-primary cart-badge">5</span> </i>
-            </form>
+            
             <!--main content-->
             <div class="container">
                 <form id="contact" action="" onsubmit="return showinfo()">
