@@ -55,27 +55,21 @@
             
             <!--main content-->
             <div class="container">
-                <form id="contact" action="" onsubmit="return showinfo()">
+                <form class="contact" action="" method="post" >
                   <h1>Quick Contact</h1>
                   <h4>Contact us today, and get more information<i class="fa fa-reply-all" aria-hidden="true"></i>!</h4>
                   <hr>
                     <table>
                         <tr>
-                            <td>Fist name</td>
+                            <td>Your name:</td>
                             <td>
-                                <input type="text" required id="finame">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
                             </td>
                         </tr>
                         <tr>
-                            <td>Last name</td>
+                            <td>Email:</td>
                             <td>
-                                <input type="text" required id="laname">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>
-                                <input type="text" name="" required pattern="^\w+@\w+\.\w+$" id="email">
+                                <input type="text" name="email" id="email" placeholder="Email" required>
                             </td>
                         </tr>
                         <tr>
@@ -84,30 +78,30 @@
                         <tr>
                             <td colspan="2">
                                 <label>
-                                    <input type="checkbox" value="Newspaper" class="Knowabout">Newspaper
+                                    <input type="checkbox" value="Newspaper" name="Knowabout" class="Knowabout">Newspaper
                                 </label>
                                 <label>
-                                    <input type="checkbox" value="Magazie" class="Knowabout">Magazie
+                                    <input type="checkbox" value="Magazie" name="Knowabout" class="Knowabout">Magazie
                                 </label>
                                 <label>
-                                    <input type="checkbox" value="Form a friend" class="Knowabout">Form a friend
+                                    <input type="checkbox" value="Form a friend" name="Knowabout" class="Knowabout">Form a friend
                                 </label>
                                 <label>
-                                    <input type="checkbox" value="Form a website" class="Knowabout">Form a website
+                                    <input type="checkbox" value="Form a website" name="Knowabout" class="Knowabout">Form a website
                                 </label>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2">Feedback</td>
+                            <td colspan="2">Feedback:</td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <textarea name="" id="feedback" cols="" rows="4"></textarea>
+                                <textarea name="feedback" id="feedback" cols="" rows="4"></textarea>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" id="form-submit">
-                                <input type="submit" value="Submit">
+                                <input type="submit" value="Submit" onclick="showInfo()">
                                 <input type="reset" value="Reset">
                             </td>
                         </tr>
@@ -121,19 +115,11 @@
             <!--end main content-->
             <script>
                 function showInfo(){
-                    var finame = document.getElementById('finame').value;
-                    var laname = document.getElementById('laname').value;
-                    var arr = document.getElementsByClassName('employed');
+                    var name = document.getElementById('name').value;
                     var arr1 = document.getElementsByClassName('Knowabout');
-                    var employed ='';
                     var Knowabout = '';
                     var email = document.getElementById('email').value;
                     var feedback = document.getElementById('feedback').value;
-                    for (var i=0;i<arr.length;i++){
-                        if(arr[i].checked){
-                            employed += arr[i].value;
-                        }
-                    }
                     for (var i=0;i<arr1.length;i++){
                         if(arr1[i].checked){
                             Knowabout = Knowabout + arr1[i].value + ',' + ' ';
@@ -141,11 +127,10 @@
                     }
                     alert("Member Infomation\n" + 
                     "-----------------\n" + 
-                    "Fist name: " + finame + "\n" +
-                    "Last name: " + laname + "\n" +
+                    "Your name: " + name + "\n" +
                     "Email: " + email + "\n" +
                     "Learn of site form: " + Knowabout + "\n" +
-                    "Feedback: " + comment);
+                    "Feedback: " + feedback);
                 }
            </script>
         </div>
