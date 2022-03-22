@@ -8,6 +8,8 @@ header{
 }
 footer{
     margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .cart-icon{
     position: relative;
@@ -53,14 +55,14 @@ footer{
     
 }
 .policy-item:nth-child(1){
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .policy-text{
     width: 55%;
 }
 .policy-container{
 
-    padding:80px 0;
+    padding:50px 0;
  }
  .icon-policy{
     padding-right: 20px;

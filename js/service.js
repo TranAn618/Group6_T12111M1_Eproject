@@ -56,8 +56,8 @@ $("#formSearch").submit(function(e){
 
 
 //lap trinh su kien click chon loai san pham
-$(".ck-product").click(function(){
-    var category = $(".ck-product:checked").map(function(){return $(this).val()}).toArray().toString();
+$(".ck-service").click(function(){
+    var category = $(".ck-service:checked").map(function(){return $(this).val()}).toArray().toString();
     var subdata = (category.length==0)?data : data.filter(item =>category.search(item.cat) >=0);
     displayImages(subdata);
 })
