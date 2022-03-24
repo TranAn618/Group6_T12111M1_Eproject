@@ -42,8 +42,8 @@ function displayImages(items){
                 <div class="card">
                     <div class="card-header">${v.name}</div>
                     <div class="card-body"><a href="product_${v.id}.html"><img src="../image/${v.pic}" alt="${v.name}" width="200px" height="300px"></a></div> 
-                    <div class="card-footer">Price: ${v.price} <br>
-                        <button>Add to cart </button></div>
+                    <div class="card-footer">Price: ${v.price}<br></div>
+                    <a href="#" data-name="${v.name}" data-price="${v.price}" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
             </div>`;
     });

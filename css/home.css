@@ -11,17 +11,7 @@ footer{
     margin-left: 50px;
     margin-right: 50px;
 }
-.cart-icon{
-    position: relative;
-    font-size: 30px;
-}
 
-.cart-badge{
-    position: absolute;
-    font-size: 10px;
-    left: 20px;
-    top: -5px;
-}
 .icon-policy{
     padding-right: 20px;
 }
@@ -66,4 +56,20 @@ footer{
  }
  .icon-policy{
     padding-right: 20px;
+}
+/* cart */
+body {
+    padding-top: 80px;
+  }
+  
+  .show-cart li {
+    display: flex;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
 }
