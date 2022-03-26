@@ -34,6 +34,10 @@ footer{
     font-size: 10px;
     color: black;
 }
+.aboutus{
+    font-size: large;
+    font-weight: bold;
+}
 .adjust-policy{
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -58,11 +62,7 @@ footer{
     padding-right: 20px;
 }
 /* cart */
-body {
-    padding-top: 80px;
-  }
-  
-  .show-cart li {
+.show-cart li {
     display: flex;
   }
   .card {
@@ -72,4 +72,4 @@ body {
     width: 200px;
     height: 200px;
     align-self: center;
-}
+  }

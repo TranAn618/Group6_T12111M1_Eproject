@@ -78,7 +78,7 @@ function showProduct(pid){
                 <h1>Name: ${product.name}</h1>
                 <h2>Price: ${product.price}</h2>
                 <h3>Description: ${product.description}</h3>
-                <button class="btn btn-primary">Add to cart</button>
+                <button class="add-to-cart btn btn-primary">Add to cart</button>
             </div>`;
     $("#productDetail").html(x);
 }
